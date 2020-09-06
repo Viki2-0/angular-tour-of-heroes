@@ -12,6 +12,13 @@ import { HEROES } from '../mock-heroes';
   heroes = HEROES;
   constructor() { }
 
+
+  selectedHero: Hero;
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+    console.log(this.selectedHero);
+  }
+
   ngOnInit(): void {
   }
 
